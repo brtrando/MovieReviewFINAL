@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 public class PageActivity extends AppCompatActivity {
     private TextView nameTextview;
-    private Button btCreatereview, btMyreview;
+    private Button btCreatereview, btReqmovie, btMyreview, btLogout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +20,9 @@ public class PageActivity extends AppCompatActivity {
 
         nameTextview = findViewById(R.id.namePage);
         btCreatereview = findViewById(R.id.btCreatereview);
+        btReqmovie = findViewById(R.id.btReqmovie);
         btMyreview = findViewById(R.id.btMyreview);
+        btLogout = findViewById(R.id.btLogout);
 
         Intent intent = getIntent();
         String akun = intent.getStringExtra("username");
@@ -35,13 +37,35 @@ public class PageActivity extends AppCompatActivity {
             }
         });
 
+        btReqmovie.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(PageActivity.this,ReqmovieActivity.class);
+                intent.putExtra("username",akun);
+                startActivity(intent);
+            }
+        });
+
         btMyreview.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(PageActivity.this,ReviewActivity.class);
+                intent.putExtra("username",akun);
                 startActivity(intent);
             }
         });
+
+        btLogout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(PageActivity.this,MainActivity.class);
+                String akunLogout = akun;
+                akunLogout = null;
+                intent.putExtra("username",akunLogout);
+                startActivity(intent);
+            }
+        });
+
 
     }
 }

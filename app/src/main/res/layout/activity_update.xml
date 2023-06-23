@@ -37,23 +37,10 @@
             android:textStyle="bold" />
 
         <Spinner
-            android:id="@+id/spinnerCreate"
+            android:id="@+id/spinnerUpdate"
             android:layout_width="match_parent"
             android:textSize="16dp"
             android:layout_height="51dp" />
-
-<!--        <EditText-->
-<!--            android:id="@+id/titleCreate"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="50dp"-->
-<!--            android:background="@drawable/background_edittext"-->
-<!--            android:ems="10"-->
-<!--            android:hint="Title"-->
-<!--            android:inputType="textPersonName"-->
-<!--            android:padding="8dp"-->
-<!--            android:textColor="@color/black"-->
-<!--            android:textColorHint="#dddddd"-->
-<!--            android:textSize="16dp" />-->
 
 
         <TextView
@@ -65,10 +52,8 @@
             android:textSize="20dp"
             android:textStyle="bold" />
 
-
-
         <EditText
-            android:id="@+id/scoreCreate"
+            android:id="@+id/scoreUpdate"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="@drawable/background_edittext"
@@ -90,7 +75,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/commentCreate"
+            android:id="@+id/commentUpdate"
             android:layout_width="match_parent"
             android:layout_height="126dp"
             android:background="@drawable/background_edittext"
@@ -103,12 +88,12 @@
             android:textSize="16dp" />
 
         <Button
-            android:id="@+id/btSubmit"
+            android:id="@+id/btSubmitUpdate"
             android:layout_width="337dp"
             android:layout_height="50dp"
             android:layout_marginBottom="96dp"
-            android:background="@drawable/background_button"
-            android:text="Submit" />
+            android:background="@drawable/background_btupdate"
+            android:text="Update" />
         android:textColor="@color/white"
     </LinearLayout>
 
@@ -119,7 +104,7 @@
         android:fontFamily="sans-serif-black"
         android:shadowColor="#FFEB3B"
         android:shadowRadius="30"
-        android:text="Create Movie Review"
+        android:text="Update Movie Review"
         android:textColor="@color/black"
         android:textSize="40dp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"

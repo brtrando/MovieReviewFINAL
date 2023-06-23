@@ -3,12 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/MovieReview/app/src/main/res/layout/activity_create.xml" value="0.264" />
-        <entry key="..\:/MovieReview/app/src/main/res/layout/activity_login.xml" value="0.25416666666666665" />
-        <entry key="..\:/MovieReview/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
-        <entry key="..\:/MovieReview/app/src/main/res/layout/activity_page.xml" value="0.25416666666666665" />
-        <entry key="..\:/MovieReview/app/src/main/res/layout/activity_review.xml" value="0.5541666666666667" />
+        <entry key="..\:/MovieReview/app/src/main/res/drawable-v24/background_button.xml" value="0.103" />
+        <entry key="..\:/MovieReview/app/src/main/res/drawable/background_btdelete.xml" value="0.103" />
+        <entry key="..\:/MovieReview/app/src/main/res/drawable/background_btupdate.xml" value="0.103" />
+        <entry key="..\:/MovieReview/app/src/main/res/layout/activity_create.xml" value="0.2" />
+        <entry key="..\:/MovieReview/app/src/main/res/layout/activity_delete.xml" value="0.16799999999999998" />
+        <entry key="..\:/MovieReview/app/src/main/res/layout/activity_login.xml" value="0.2" />
+        <entry key="..\:/MovieReview/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/MovieReview/app/src/main/res/layout/activity_page.xml" value="0.2" />
+        <entry key="..\:/MovieReview/app/src/main/res/layout/activity_reqmovie.xml" value="0.1" />
+        <entry key="..\:/MovieReview/app/src/main/res/layout/activity_review.xml" value="0.23854166666666668" />
         <entry key="..\:/MovieReview/app/src/main/res/layout/activity_signup.xml" value="0.25416666666666665" />
+        <entry key="..\:/MovieReview/app/src/main/res/layout/activity_update.xml" value="0.2" />
+        <entry key="..\:/MovieReview/app/src/main/res/layout/item_review.xml" value="0.264" />
       </map>
     </option>
   </component>

@@ -46,7 +46,7 @@ public class SignupActivity extends AppCompatActivity {
                 String username = usrSignup.getText().toString();
                 String password = passwordSignup.getText().toString();
                 String passCon = passwordCon.getText().toString();
-                String url = "http://172.20.10.2:7000/signup";
+                String url = "http://172.22.104.156:7000/signup";
                 JSONObject object = new JSONObject();
                 try {
                     object.put("name", name);

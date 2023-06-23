@@ -164,16 +164,4 @@
         app:layout_constraintStart_toStartOf="@+id/imageView3"
         app:layout_constraintTop_toTopOf="@+id/imageView3" />
 
-    <ImageView
-        android:id="@+id/btBackWhiteRegis"
-        android:layout_width="51dp"
-        android:layout_height="37dp"
-        android:background="@drawable/background_btback"
-        app:layout_constraintBottom_toTopOf="@+id/textView5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.045"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.142" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
