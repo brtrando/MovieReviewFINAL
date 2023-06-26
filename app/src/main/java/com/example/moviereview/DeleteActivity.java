@@ -24,7 +24,7 @@ import org.json.JSONObject;
 public class DeleteActivity extends AppCompatActivity {
     Spinner movieSpinner;
     Button btSubmitDelete;
-    private static final String URL = "http://172.22.104.156:7000/deletereviews";
+    private static final String URL = "http://192.168.11.124:7000/deletereviews";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,7 +46,7 @@ public class DeleteActivity extends AppCompatActivity {
         });
 
         // Mendapatkan data ulasan pengguna dari server API
-        String reviewsUrl = "http://172.22.104.156:7000/myreviews/" + akun;
+        String reviewsUrl = "http://192.168.11.124:7000/myreviews/" + akun;
 
         JsonObjectRequest reviewsRequest = new JsonObjectRequest(Request.Method.GET, reviewsUrl, null,
                 new Response.Listener<JSONObject>() {

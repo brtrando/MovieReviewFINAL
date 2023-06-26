@@ -26,7 +26,7 @@ import java.util.List;
 public class UpdateActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     EditText scoreUpdate, commentUpdate;
     Button btSubmitUpdate;
-    private static final String UPDATE_URL = "http://172.22.104.156:7000/reviews";
+    private static final String UPDATE_URL = "http://192.168.11.124:7000/reviews";
 
     private Spinner titleSpinner;
     private ArrayAdapter<String> spinnerAdapter;
@@ -46,7 +46,7 @@ public class UpdateActivity extends AppCompatActivity implements AdapterView.OnI
         String akun = intent.getStringExtra("username");
 
         // Mengambil data judul film dari server API
-        String url = "http://172.22.104.156:7000/myreviews/" + akun;
+        String url = "http://192.168.11.124:7000/myreviews/" + akun;
         JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, url, null,
                 new Response.Listener<JSONObject>() {
                     @Override

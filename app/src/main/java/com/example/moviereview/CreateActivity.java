@@ -49,7 +49,7 @@ public class CreateActivity extends AppCompatActivity {
         reviewedMovies = new HashSet<>();
 
         // Mendapatkan data film dari API server
-        String moviesUrl = "http://172.22.104.156:7000/movies";
+        String moviesUrl = "http://192.168.11.124:7000/movies";
 
         JsonObjectRequest moviesRequest = new JsonObjectRequest(Request.Method.GET, moviesUrl, null,
                 new Response.Listener<JSONObject>() {
@@ -72,7 +72,7 @@ public class CreateActivity extends AppCompatActivity {
                             }
 
                             // Memuat ulasan pengguna dari server API
-                            String reviewsUrl = "http://172.22.104.156:7000/myreviews/" + akun;
+                            String reviewsUrl = "http://192.168.11.124:7000/myreviews/" + akun;
 
                             JsonObjectRequest reviewsRequest = new JsonObjectRequest(Request.Method.GET, reviewsUrl, null,
                                     new Response.Listener<JSONObject>() {
@@ -134,7 +134,7 @@ public class CreateActivity extends AppCompatActivity {
                 String title = movieSpinner.getSelectedItem().toString();
                 String score = scoreCreate.getText().toString();
                 String comment = commentCreate.getText().toString();
-                String url = "http://172.22.104.156:7000/reviews";
+                String url = "http://192.168.11.124:7000/reviews";
 
                 JSONObject object = new JSONObject();
                 try {

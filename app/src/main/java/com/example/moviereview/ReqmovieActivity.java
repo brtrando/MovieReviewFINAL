@@ -19,7 +19,7 @@ import org.json.JSONObject;
 public class ReqmovieActivity extends AppCompatActivity {
     EditText titleReq, year_release;
     Button btSubmitReq;
-    private static final String REQUEST_URL = "http://172.22.104.156:7000/reqmovies";
+    private static final String REQUEST_URL = "http://192.168.11.124:7000/reqmovies";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

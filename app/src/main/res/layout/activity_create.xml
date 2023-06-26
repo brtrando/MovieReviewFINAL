@@ -40,6 +40,7 @@
             android:id="@+id/spinnerCreate"
             android:layout_width="match_parent"
             android:textSize="16dp"
+            android:textColor="@color/black"
             android:layout_height="51dp" />
 
 <!--        <EditText-->

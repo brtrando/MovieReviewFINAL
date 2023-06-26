@@ -39,7 +39,7 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String username = usernameEditText.getText().toString();
                 String password = passwordEditText.getText().toString();
-                String url = "http://172.22.104.156:7000/login";
+                String url = "http://192.168.11.124:7000/login";
                 JSONObject object = new JSONObject();
                 try {
                     object.put("username",username);

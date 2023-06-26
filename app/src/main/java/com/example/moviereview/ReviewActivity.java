@@ -54,7 +54,7 @@ public class ReviewActivity extends AppCompatActivity {
 
 
 
-        url = "http://172.22.104.156:7000/myreviews/"+akun;
+        url = "http://192.168.11.124:7000/myreviews/"+akun;
 
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, url, null,
                 new Response.Listener<JSONObject>() {
